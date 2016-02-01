@@ -1,1 +1,1 @@
-# Course-project---Getting-and-Cleaning-Data---Jan-2016
+# Description of run_analysis.R 
