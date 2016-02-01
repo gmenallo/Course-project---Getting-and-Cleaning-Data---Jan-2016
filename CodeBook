@@ -20,7 +20,8 @@ The sensor acceleration signal, which has gravitational and body motion componen
 The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. 
 From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
-For our course project, we are going to use only few data from the original data set:
+For our course project, we are going to use only few data from the original data set.
+For further information about how we manipulated the original data set, please read README.md
 ======================================
 
 - 'features.txt': List of all features.
