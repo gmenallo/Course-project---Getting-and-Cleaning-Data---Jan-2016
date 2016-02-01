@@ -6,4 +6,4 @@ Then it downloads and reads all the data in separate tables. Data from test and 
 
 Then it performs a multivariable grouping (by activity and then by subject ID) and, using summarize_each(), it computes the mean value of each columns. The result is the secondd tidy data set requested.
 
-At the end, both the data sets are saved in the working directory as .RDS files.
+At the end, only the last tidy data set is saved in the working directory as a .txt file.
