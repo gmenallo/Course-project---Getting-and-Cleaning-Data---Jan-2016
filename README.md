@@ -1,9 +1,19 @@
-# Description of run_analysis.R 
+#What's in this repo?
 
-run_analysis.R starts checking if the needed packages are already installed. If not, it automatically downloads and installs them.
+This repo contains the files submitted for the final exam of Jan 2016 "Getting and Cleaning Data" course.
+Along with the present README, you will find a CODEBOOK describing how the "run_analysis.R" script works and what variables were taken in account, the script itself and its output file in .txt format.
 
-Then it downloads and reads all the data in separate tables. Data from test and train sets are binded togheter using rbind() and cbind(), then the variables are renamed with colnames().  Using merge(){dplyr}, it updates the "Activity" column. Using select(){dplyr}, it subsets the database, extracting the columns which contains the word mean or std (the selection isn't case sensitive). The result is a tidy data set, as requested.
+The analysis was perfomered on version 1.0 of the public dataset "Activity Recognition Using Smartphones". 
+run_analysis.R is a simple script that downloads and reads the original dataset, merges the train and test data, updates the variables' names to make them easier to understand and then creates a new dataset containing only mean values and their standard deviations. Then it computes the mean value for each variable and saves them in a different dataset.
 
-Then it performs a multivariable grouping (by activity and then by subject ID) and, using summarize_each(), it computes the mean value of each columns. The result is the secondd tidy data set requested.
 
-At the end, only the last tidy data set is saved in the working directory as a .txt file.
+For further details about the original dataset, please contact the authors of the study:
+
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+
+
