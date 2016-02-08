@@ -45,158 +45,137 @@ The original dataset cointains several files but for our project we considered o
 List of variables
 =================
 
-Here are listed the variable we considered in our project:
+Here are listed the variables we considered in our project:
 
 ID: identifies the volunteer, ranged from 1 to 30.
 
 Activity: indentifies the activity performed. 
 It might have one of the following values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
-TimeBodyAccMean()X, TimeBodyAccMean()Y, TimeBodyAccMean()Z: body acceleration along the 3-axis in time domain.
 
-TimeBodyAccStd()X, TimeBodyAccStd()Y, TimeBodyAccStd()Z:: standard deviation of body acceleration along the 3-axis in time domain.
 
-TimeGravityAccMean()X, TimeGravityAccMean()Y, TimeGravityAccMean()Z:
+Variables in time domain
+------------------------
 
-TimeGravityAccStd()X, TimeGravityAccStd()Y,TimeGravityAccStd()Z:
+- TimeBodyAccMean()X, TimeBodyAccMean()Y, TimeBodyAccMean()Z: body acceleration along the 3 axis.
 
-TimeBodyAccJerkMean()X, TimeBodyAccJerkMean()Y, TimeBodyAccJerkMean()Z:
+- TimeBodyAccStd()X, TimeBodyAccStd()Y, TimeBodyAccStd()Z:: standard deviation of body acceleration along the 3 axis.
 
-TimeBodyAccJerkStd()X, TimeBodyAccJerkStd()Y, TimeBodyAccJerkStd()Z:               
+- TimeGravityAccMean()X, TimeGravityAccMean()Y, TimeGravityAccMean()Z: gravity acceleration along the 3 axis.
 
-TimeBodyGyroMean()X, TimeBodyGyroMean()Y, TimeBodyGyroMean()Z:
+- TimeGravityAccStd()X, TimeGravityAccStd()Y,TimeGravityAccStd()Z: standard deviation of gravity acceleration along the 3 axis.
 
-TimeBodyGyroStd()X, TimeBodyGyroStd()Y, TimeBodyGyroStd()Z:
+- TimeBodyAccJerkMean()X, TimeBodyAccJerkMean()Y, TimeBodyAccJerkMean()Z: Jerk signals along the 3 axis, derived from linear acceleration.
 
-TimeBodyGyroJerkMean()X, TimeBodyGyroJerkMean()Y, TimeBodyGyroJerkMean()Z:
+- TimeBodyAccJerkStd()X, TimeBodyAccJerkStd()Y, TimeBodyAccJerkStd()Z: standard eviation of  Jerk signals along the 3 axis, derived from linear acceleration.         
 
-TimeBodyGyroJerkStd()X, TimeBodyGyroJerkStd()Y, TimeBodyGyroJerkStd()Z:
+- TimeBodyGyroMean()X, TimeBodyGyroMean()Y, TimeBodyGyroMean()Z: angular velocity along the 3 axis.
 
-TimeBodyAccMagMean():
+- TimeBodyGyroStd()X, TimeBodyGyroStd()Y, TimeBodyGyroStd()Z: standard deviation of angular velocity along the 3 axis.
 
-TimeBodyAccMagStd():
+- TimeBodyGyroJerkMean()X, TimeBodyGyroJerkMean()Y, TimeBodyGyroJerkMean()Z: Jerk signals along the 3 axis, derived from the angular velocity.
 
-TimeGravityAccMagMean():
+- TimeBodyGyroJerkStd()X, TimeBodyGyroJerkStd()Y, TimeBodyGyroJerkStd()Z: standard deviation of Jerk signals along the 3 axis, derived from the angular velocity.
 
-TimeGravityAccMagStd():             
+- TimeBodyAccMagMean(): Magnitude of body linear acceleration (vector).
 
-TimeBodyAccJerkMagMean():
+- TimeBodyAccMagStd(): standard deviation of magnitude of body linear acceleration (vector).
 
-TimeBodyAccJerkMagStd():
+- TimeGravityAccMagMean(): Magnitude of gravity acceleration (vector).
 
-TimeBodyGyroMagMean():              
+- TimeGravityAccMagStd(): standard deviation of magnitude of gravity acceleration (vector).           
 
-TimeBodyGyroMagStd():
+- TimeBodyAccJerkMagMean(): Magnitude of Jerk signal (vector) derived from body linear acceleration.
 
-TimeBodyGyroJerkMagMean():
+- TimeBodyAccJerkMagStd(): standard deviation of magnitude of Jerk signal (vector) derived from body linear acceleration.
 
-TimeBodyGyroJerkMagStd():
+- TimeBodyGyroMagMean(): Magnitude of body angular velocity (vector).             
 
-FrequencyBodyAccMean()X, FrequencyBodyAccMean()Y, FrequencyBodyAccMean()Z:
+- TimeBodyGyroMagStd(): standard deviation of magnitude of body angular velocity (vector).
 
-FrequencyBodyAccStd()X, FrequencyBodyAccStd()Y. FrequencyBodyAccStd()Z:
+- TimeBodyGyroJerkMagMean(): Magnitude of Jerk signal derived from  body angular velocity (vector).
 
-FrequencyBodyAccMeanFreq()X, FrequencyBodyAccMeanFreq()Y, FrequencyBodyAccMeanFreq()Z:
-
-FrequencyBodyAccJerkMean()X, FrequencyBodyAccJerkMean()Y, FrequencyBodyAccJerkMean()Z:
-
-FrequencyBodyAccJerkStd()X, FrequencyBodyAccJerkStd()Y, FrequencyBodyAccJerkStd()Z:
-
-FrequencyBodyAccJerkMeanFreq()X, FrequencyBodyAccJerkMeanFreq()Y, FrequencyBodyAccJerkMeanFreq()Z:    
-
-FrequencyBodyGyroMean()X, FrequencyBodyGyroMean()Y, FrequencyBodyGyroMean()Z:       
-
-FrequencyBodyGyroStd()X, FrequencyBodyGyroStd()Y, FrequencyBodyGyroStd()Z:          
-
-FrequencyBodyGyroMeanFreq()X, FrequencyBodyGyroMeanFreq()Y, FrequencyBodyGyroMeanFreq()Z:     
-
-FrequencyBodyAccMagMean():
-
-FrequencyBodyAccMagStd():
-
-FrequencyBodyAccMagMeanFreq():       
-
-FrequencyBodyAccJerkMagMean():
-
-FrequencyBodyAccJerkMagStd():
-
-FrequencyBodyAccJerkMagMeanFreq():
-
-FrequencyBodyGyroMagMean():
-
-FrequencyBodyGyroMagStd():
-
-FrequencyBodyGyroMagMeanFreq():    
-
-FrequencyBodyGyroJerkMagMean():
-
-FrequencyBodyGyroJerkMagStd():
-
-FrequencyBodyGyroJerkMagMeanFreq(): 
-
-angle(tBodyAccMean,gravity):
-
-angle(tBodyAccJerkMean),gravityMean):
-
-angle(tBodyGyroMean,gravityMean):    
-
-angle(tBodyGyroJerkMean,gravityMean) 
-
-angle(X,gravityMean), angle(Y,gravityMean), angle(Z,gravityMean):
+- TimeBodyGyroJerkMagStd(): standard deviation of magnitude of Jerk signal derived from  body angular velocity (vector).
 
 
 
 
+Variables in frequency domain
+-----------------------------
+- FrequencyBodyAccMean()X, FrequencyBodyAccMean()Y, FrequencyBodyAccMean()Z: body acceleration along the 3 axis.
 
-Feature Selection 
-=================
+- FrequencyBodyAccStd()X, FrequencyBodyAccStd()Y. FrequencyBodyAccStd()Z: standard deviation of body acceleration along the 3 axis.
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
-These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
-Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
-Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+- FrequencyBodyAccMeanFreq()X, FrequencyBodyAccMeanFreq()Y, FrequencyBodyAccMeanFreq()Z: frequency of body acceleration along the 3 axis.
 
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
-Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+- FrequencyBodyAccJerkMean()X, FrequencyBodyAccJerkMean()Y, FrequencyBodyAccJerkMean()Z: Jerk signals along the 3 axis, derived from linear acceleration.
 
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+- FrequencyBodyAccJerkStd()X, FrequencyBodyAccJerkStd()Y, FrequencyBodyAccJerkStd()Z: standard deviation of Jerk signals along the 3 axis, derived from linear acceleration.
 
-These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+- FrequencyBodyAccJerkMeanFreq()X, FrequencyBodyAccJerkMeanFreq()Y, FrequencyBodyAccJerkMeanFreq()Z: frequency of Jerk signals along the 3 axis, derived from linear acceleration.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+- FrequencyBodyGyroMean()X, FrequencyBodyGyroMean()Y, FrequencyBodyGyroMean()Z: angular velocity along the 3 axis.
 
-For our course project we are considering only mean values and standard deviations of these variables, along with addiotional vectors obtained by averaging the signals in a signal window sample. 
-These are used on the angle() variable:
+- FrequencyBodyGyroStd()X, FrequencyBodyGyroStd()Y, FrequencyBodyGyroStd()Z: standard deviation of angular velocity along the 3 axis.   
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+- FrequencyBodyGyroMeanFreq()X, FrequencyBodyGyroMeanFreq()Y, FrequencyBodyGyroMeanFreq()Z: frequency of angular velocity along the 3 axis.
 
-The complete list of variables of each feature vector is available in 'features.txt' of the original data set.
+- FrequencyBodyAccMagMean(): Magnitude of body linear acceleration (vector).
+
+- FrequencyBodyAccMagStd(): standard deviation of Magnitude of body linear acceleration (vector).
+
+- FrequencyBodyAccMagMeanFreq(): frequency of magnitude of body linear acceleration (vector).     
+
+- FrequencyBodyAccJerkMagMean(): Magnitude of Jerk signal, derived from linear acceleration (vector).
+
+- FrequencyBodyAccJerkMagStd(): standard deviation of magnitude of Jerk signal, derived from linear acceleration (vector).
+
+- FrequencyBodyAccJerkMagMeanFreq(): frequency of magnitude of Jerk signal, derived from linear acceleration (vector).
+
+- FrequencyBodyGyroMagMean(): Magnitude of body angular velocity (vector).    
+
+- FrequencyBodyGyroMagStd(): standard deviation of magnitude of body angular velocity (vector).    
+
+- FrequencyBodyGyroMagMeanFreq(): frequency of magnitude of body angular velocity (vector).    
+
+- FrequencyBodyGyroJerkMagMean(): Magnitude of Jerk signal derived from  body angular velocity (vector).
+
+- FrequencyBodyGyroJerkMagStd(): standard deviation of magnitude of Jerk signal derived from  body angular velocity (vector).
+
+- FrequencyBodyGyroJerkMagMeanFreq(): frequency of magnitude of Jerk signal derived from  body angular velocity (vector).
 
 
-===================
+
+Angles
+------
+
+- angle(tBodyAccMean,gravity): angle between body and gravity acceleration (vectors).
+
+- angle(tBodyAccJerkMean),gravityMean): angle between Jerk signal, derived from linear acceleration, and gravity acceleration (vectors).
+
+- angle(tBodyGyroMean,gravityMean): angle between body angular velocity and gravity acceleration (vectors).
+
+- angle(tBodyGyroJerkMean,gravityMean): angle between Jerk signal, derived from angula velocity, and gravity acceleration (vectors).
+
+- angle(X,gravityMean), angle(Y,gravityMean), angle(Z,gravityMean): angle beween each axis and gravity acceleration (vectors).
 
 
+
+
+
+Notes about the variables 
+=========================
+
+All time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.Similarly, the acceleration signal was then separated into body and gravity acceleration signal using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals.
+The magnitude of these three-dimensional signals were calculated using the Euclidean norm.
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing the variables listed in frequency domain. 
+These signals were used to estimate variables of the feature vector for each pattern.
+
+
+
+
+********************************************************************************************************************************
 For more information about the complete dataset contact: activityrecognition@smartlab.ws
 
 License:
