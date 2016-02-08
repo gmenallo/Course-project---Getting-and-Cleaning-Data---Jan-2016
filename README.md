@@ -9,9 +9,9 @@ run_analysis.R is a simple script that downloads and reads the original dataset,
 
 For further details about the original dataset, please contact the authors of the study:
 
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
-Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
-activityrecognition@smartlab.ws
-www.smartlab.ws
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.  
+Smartlab - Non Linear Complex Systems Laboratory  
+DITEN - Università degli Studi di Genova.  
+Via Opera Pia 11A, I-16145, Genoa, Italy.  
+activityrecognition@smartlab.ws  
+www.smartlab.ws  
